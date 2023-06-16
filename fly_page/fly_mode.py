@@ -9,7 +9,7 @@ background=[
 ]
 print(background[0])
 print(background[1])
-print(background[1])
+print(background[2])
 ## fly 生命
 fly_hp=100
 
