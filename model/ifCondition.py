@@ -9,3 +9,10 @@ elif var2.endswith('s'):
 else:
     print("不匹配")
 
+## match 语法
+http_status=400
+match http_status:
+    case 400:
+        print(f"{http_status}!")
+
+
