@@ -25,7 +25,7 @@
 # print(list10)
 
 ## 通讯录
-name=['aaron','aaron1','aaron2','aaron3']
-phone=[1,2,3,4]
-message=dict(zip(name,phone))
-print(message)
+# name=['aaron','aaron1','aaron2','aaron3']
+# phone=[1,2,3,4]
+# message=dict(zip(name,phone))
+# print(message)
