@@ -1,5 +1,5 @@
 ## if 判断  需要顶格
-var1='sss';
+var1='sss'
 var2='s'
 
 if(var1.__eq__('ss')):
