@@ -6,9 +6,15 @@ import pprint
 # filer_data.close()
 # pprint.pprint(data_line )
 
-write=open("/Users/aaron.chen/data/update_vendor/open_demo.text",mode='w',encoding="UTF-8")
-write.write("人生苦短， 我来搞python!")
-write.close()
+# write=open("/Users/aaron.chen/data/update_vendor/open_demo.text",mode='w',encoding="UTF-8")
+# write.write("人生苦短， 我来搞python!")
+# write.close()
 
-read=open("/Users/aaron.chen/data/update_vendor/open_demo.text",mode='r',encoding="UTF-8")
-pprint.pprint(read.readlines())
+# read=open("/Users/aaron.chen/data/update_vendor/open_demo.text",mode='r',encoding="UTF-8")
+# pprint.pprint(read.read(10) )
+# read.close()
+
+with open("/Users/aaron.chen/data/update_vendor/open_demo.text",mode='r',encoding="UTF-8") as reads:
+   data= reads.readlines()
+
+pprint.pprint(data)
