@@ -4,7 +4,7 @@ class Coffee:
     water=1
     milk=1
 
-    ## 类中定义方法  需要第一个参数为self . self 固定参数，为对象本身
+    ## 类中定义方法  需要第一个参数为self . self 固定参数，为实例化对象
     def add_water(self):
         self.water=5
 

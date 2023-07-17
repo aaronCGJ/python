@@ -24,3 +24,50 @@ obj2.run()
 
 
 
+# """类的装饰器"""
+# classmethod 装饰器
+    # classmethod 可以是实例的方法定义为类的方法 ，用于类直接调用
+    # * cls 表示当前操作的类本身，可以使用Klass.func() 调用。
+    # self 固定参数，为实例化对象
+
+class Klass:
+
+    ## 用途： 不需要进行实例化 直接调用类方法
+        @classmethod
+        def func(cls):
+            print("classmethod")
+
+  # staticmethod 装饰器  静态方法   staticmethod 修饰的方法不需要使用self或者cls
+        @staticmethod
+        def finc_2():
+            print("staticmethod")
+
+
+
+Klass.func()
+Klass.finc_2()
+
+class Class_3:
+    # property 装饰器 (属性)   可以很快速的作为属性读取  。但是无法进行属性直接赋值。 必须实例化后调用
+    ### 需要 用 property 装饰的方法调用setter 方法进行装饰 进行属性赋值
+        @property
+        def func_3(self):
+           return  self.name
+        @func_3.setter
+        def func_4(self,value):
+            self.name=value
+
+Klass.func()
+Klass.finc_2()
+
+##  实例化
+pro=Class_3()
+##  赋值
+pro.func_4="property"
+##调用方法
+print(pro.func_3)
+
+
+
+
+
